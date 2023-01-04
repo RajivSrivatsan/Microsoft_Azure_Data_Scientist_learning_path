@@ -64,3 +64,40 @@ numpy array multiplies item wise whereas list multiplies the sequence.
 => data[0] - returns the first element of the array
 => data.mean() - returns the average of all elements in the array
 
+To access the elements of 2D array,
+
+data[0][0] can be used to get the first element
+
+# Exploring Tabular Data with Pandas
+
+A DataFrame can be used when there are multiple columns and rows
+student_data = ([study_hours,grades])
+
+df.student = pd.dataframe({'Name': ['Dan', 'Ross'],
+'study_hours': student_data[0],
+'Grade': student_data[1]})
+
+# Finding and filtering data in a dataframe
+
+you can use dataframe's loc method to retrieve data for a specific index value
+
+df.student.loc[5]
+
+you can also get data from a range of index values
+
+df_student.loc[0:5]
+
+You can also use iloc method to get data based on ordinal position of the value rather than the index
+
+df_student.iloc[0:5]
+
+iloc method can be used for retrieving values from rows to columns
+
+for example, 
+
+df_student.iloc[0,[1,2]]
+
+the output will be the values in row 0, and column 1 and 2
+
+
+
